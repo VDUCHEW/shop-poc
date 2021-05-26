@@ -10,8 +10,7 @@ import { User } from "./schemas/User";
 import "dotenv/config";
 import { insertSeedData } from "./seed-data";
 
-const databaseURL =
-  process.env.DATABASE_URL || "mongodb://localhost/keystone-sick-fits-tutorial";
+const databaseURL = process.env.DATABASE_URL;
 
 const sessionConfig = {
   maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?
